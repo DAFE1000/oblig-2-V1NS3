@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # To make more graphs
 fig, x = plt.subplots(1,2)
-fx = np.linspace(0, 30, 100)
+fx = np.linspace(0, 30, 1000)
 
 def funskjon1(x):
     return (np.exp(-x/4))*np.atan(x)
@@ -26,8 +26,13 @@ arrange: (start value, end value, the distance between each point in the graph)
 '''
 
 fy1 = funskjon1(fx) # Create the y values based on the x, basically f(x)
+peak = np.argmax(fy1) # Find the maximum value (toppunktet)
+x_max = fx[peak]
+y_max = fy1[peak]
+print(f"Toppunktet ligger i ({x_max:4f}, {y_max:4f}).")
 
 x[0].plot(fx, fy1) # Create a graph using the x and y values
+x[0].plot(x_max, y_max, 'ro', markersize=3)
 x[0].set_title("Funksjon 1: (e^(-x/4))*atan(x)") # Mostly user convenience
 x[0].grid(True) # Show grid
 
