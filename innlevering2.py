@@ -1,8 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def f(x):
-    return (np.e**(-x/4))*np.atan(x)
+# To make more graphs
+fig, x = plt.subplots(1,2)
+fx = np.linspace(0, 30, 100)
+
+def funskjon1(x):
+    return (np.exp(-x/4))*np.atan(x)
 
 '''
 Explanation for the x-line (mostly for personal learning)
@@ -20,12 +24,27 @@ linspace: (start value, end value, number of points to create [spaced evenly])
 
 arrange: (start value, end value, the distance between each point in the graph)
 '''
-x = np.linspace(0, 30, 100) 
-y = f(x) # Create the y values based on the x, basically f(x)
 
-# To make more graphs in case
-fig, fx = plt.subplots()
+fy1 = funskjon1(fx) # Create the y values based on the x, basically f(x)
 
-fx.plot(x,y) # Create a graph using the x and y values
-fx.set_title("(e**(-x/4))*atan(x)") # Mostly user convenience
+x[0].plot(fx, fy1) # Create a graph using the x and y values
+x[0].set_title("Funksjon 1: (e^(-x/4))*atan(x)") # Mostly user convenience
+x[0].grid(True) # Show grid
+
+# Se Utregning1.png for å se hvordan jeg kom meg frem til funskjonen her
+def f_derivert(x):
+    return np.exp(-x/4)*((4-np.atan(x)*(1+x**2))/(4+4*x**2))
+
+fy2 = f_derivert(fx) # Just used the same fx, shouldn't be an issue
+
+def g(x):
+    return np.atan(x)-(4/((x**2)+1))
+
+gy = g(fx) # the equation that shows where the peak is
+
+x[1].plot(fx, fy2)
+x[1].plot(fx, gy)
+x[1].set_title("f'(x) og g(x)")
+x[1].grid(True) # Show grid
+
 plt.show() # Show graph
