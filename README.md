@@ -6,7 +6,7 @@
 ## vidal2966@oslomet.no
 
 ### Hvordan jeg løste oppgaven:
-Så for å se hvor ekstremalpunktene til funskjonen (la oss kalle den F) ligger, må vi derivere den. Utregningen for derivasjonen ligger i Utregning1.png
+Så for å se hvor ekstremalpunktene til funskjonen (la oss kalle den F) ligger, må vi derivere den. Utregningen for derivasjonen ligger i [Utregning1.png](Utregning1.png)
 
 Så se når F' blir 0 og tegne en fortegnslinje (eller plotte funskjonen og se på når den krysser y = 0)
 
@@ -27,5 +27,5 @@ For å verifisere at f'(x) og g(x) viser til samme punkt brukte jeg geogebra.
 
 Hvis man ser på geogebra_image.png har jeg satt inn alle tre grafene og man kan da se at graf F'(x) og G(x) krysser hverandre og bytter fortegn på samme sted, 1.6907.
 
-#### Litt viktig å vite
-Jeg prøvde å bruke Newton's metode i (innlevering2_med_Newton_metode.py) men det viser til 1.6717 og ikke 1.6907. Derfor brukte jeg np.argmax i (innlevering2.py)
+### Litt viktig å vite
+Jeg prøvde å bruke Newton's metode i [innlevering2_med_Newton_metode.py](innlevering2_med_Newton_metode.py) men det viser til 1.6717 og ikke 1.6907. Derfor brukte jeg np.argmax i [innlevering2.py](innlevering2.py)
