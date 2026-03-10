@@ -25,4 +25,7 @@ Siden vi vet at den deriverte må være 0 for at det skal være en ekstremalpunk
 
 For å verifisere at f'(x) og g(x) viser til samme punkt brukte jeg geogebra.
 
-Hvis man ser på geogebra_image.png har jeg satt inn alle tre grafene og man kan da se at graf F'(x) og G(x) krysser hverandre og bytter fortegn på samme sted, 1.69.
+Hvis man ser på geogebra_image.png har jeg satt inn alle tre grafene og man kan da se at graf F'(x) og G(x) krysser hverandre og bytter fortegn på samme sted, 1.6907.
+
+#### Litt viktig å vite
+Jeg prøvde å bruke Newton's metode i (innlevering2_med_Newton_metode.py) men det viser til 1.6717 og ikke 1.6907. Derfor brukte jeg np.argmax i (innlevering2.py)
