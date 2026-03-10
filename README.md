@@ -28,4 +28,4 @@ For å verifisere at f'(x) og g(x) viser til samme punkt brukte jeg geogebra.
 Hvis man ser på geogebra_image.png har jeg satt inn alle tre grafene og man kan da se at graf F'(x) og G(x) krysser hverandre og bytter fortegn på samme sted, 1.6907.
 
 ### Litt viktig å vite
-Jeg prøvde å bruke Newton's metode i [innlevering2_med_Newton_metode.py](innlevering2_med_Newton_metode.py) men det viser til 1.6717 og ikke 1.6907. Derfor brukte jeg np.argmax i [innlevering2.py]([innlevering2.py](https://github.com/DAFE1000/oblig-2-V1NS3/blob/a975f9498610aecc009f8c53646fa8a37eada89c/innlevering2.py#L29))
+Jeg prøvde å bruke Newton's metode i [innlevering2_med_Newton_metode.py](innlevering2_med_Newton_metode.py) men det viser til 1.6717 og ikke 1.6907. Derfor brukte jeg np.argmax i [innlevering2.py](https://github.com/DAFE1000/oblig-2-V1NS3/blob/a975f9498610aecc009f8c53646fa8a37eada89c/innlevering2.py#L29)
